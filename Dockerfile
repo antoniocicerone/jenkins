@@ -26,6 +26,6 @@ RUN apt-get update \
 
 
 
-EXPOSE 9090
+EXPOSE 8080
 
 CMD echo 'ok'
