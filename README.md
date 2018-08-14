@@ -1,3 +1,3 @@
 # jenkins
 
- jenkins for php7
+ jenkins for php
