@@ -11,7 +11,7 @@ ENV JENKINS_VERSION "latest"
 
 WORKDIR /opt
 
-RUN apk add --update git openjdk8-jre ttf-dejavu vim nano curl wget php7 php-mbstring php-iconv php-pear composer \
+RUN apk add --update git openjdk8-jre ttf-dejavu vim nano curl wget php7 php-mbstring php-iconv php-pear php-dom composer \
     && rm -rf /var/cache/apk/* \
     && wget http://mirrors.jenkins-ci.org/war/${JENKINS_VERSION}/jenkins.war \
 	&& wget -O phpunit https://phar.phpunit.de/phpunit-7.phar \
