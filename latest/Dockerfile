@@ -19,6 +19,7 @@ RUN apk add --update git openjdk8-jre ttf-dejavu vim nano curl wget php7 php7-mb
 	
 RUN echo "date.timezone=Europe/Rome" >> /etc/php7/conf.d/dev.ini
 RUN echo "memory_limit=-1" >> /etc/php7/conf.d/dev.ini	
+RUN pear install PHP_CodeSniffer
 	
 VOLUME  ${JENKINS_HOME}
 
